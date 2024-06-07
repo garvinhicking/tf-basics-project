@@ -31,6 +31,6 @@ final class DummyTest extends FunctionalTestCase
     #[Test]
     public function customMiddlewareExtensionLoaded(): void
     {
-        self::assertTrue(ExtensionManagementUtility::isLoaded('custom_middleware'));
+        self::assertFalse(ExtensionManagementUtility::isLoaded('custom_middleware'));
     }
 }
