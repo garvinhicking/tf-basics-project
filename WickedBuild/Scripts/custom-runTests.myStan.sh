@@ -19,7 +19,7 @@ fi
 
 echo "(CUSTOM) phpStan verbose [ ${CUSTOM_COMMAND_ARGUMENTS} ]"
 
-COMMAND=(php -dxdebug.mode=off ${RUNTESTS_DIR_BIN}phpstan analyse -c ${PHPSTAN_CONFIG_FILE} -v --no-interaction --memory-limit 4G "$@")
+COMMAND=(php -dxdebug.mode=off ${RUNTESTS_DIR_BIN}phpstan analyse -c ${PHPSTAN_CONFIG_FILE} -v --no-interaction --memory-limit 4G "${CUSTOM_COMMAND_ARGUMENTS}")
 ${CONTAINER_BIN} run ${CONTAINER_COMMON_PARAMS} --name phpstan-${SUFFIX} ${IMAGE_PHP} "${COMMAND[@]}"
 export SUITE_EXIT_CODE=$?
 

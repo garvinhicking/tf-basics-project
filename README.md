@@ -22,6 +22,7 @@ intended for production use.
 
 - `composer install`
 - `./vendor/bin/runTests.sh -s unit`
+- `./vendor/bin/runTests.sh -s custom -- myStan`
 - Marvel at science
 
 # What and how?!
