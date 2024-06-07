@@ -1,0 +1,6 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Dead catch \\- TYPO3\\\\CMS\\\\Backend\\\\Routing\\\\Exception\\\\ResourceNotFoundException is never thrown in the try block\\.$#"
+			count: 1
+			path: ../../typo3/sysext/backend/Classes/Controller/EditDocumentController.php
